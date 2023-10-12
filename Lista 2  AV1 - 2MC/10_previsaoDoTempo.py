@@ -1,6 +1,6 @@
 import requests
 
-# Chave da API do OpenWeatherMap (substitua pela sua chave)
+# Chave da API do OpenWeatherMap 
 API_KEY = "6918387c371072deef7f2841b086f590"
 
 # Função para obter a previsão do tempo
