@@ -20,3 +20,5 @@ slice = slice(16, -4)
 
 emailSliced = email[slice]
 print(emailSliced)
+
+
