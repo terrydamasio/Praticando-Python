@@ -2,19 +2,17 @@
 #       indexing[] or slice()
 #       [start:stop:step]
 
+nome = "Terry Damasio Santos"
+print(nome[0:20:2])
 
-nome = "Terry Damasio"
+#    start:stop
+print(nome[6:])
 
-firstName = nome[0:6]
-lastName = nome[6:14]
-reversedName = nome[::-1]
-
-print(firstName)
-print(lastName)
-print(reversedName)
+#     start:step
+print(nome[0::2])
 
 # Slice
-# slice(start: count from end negative)
+#slice(start:count from end negative)
 email = "terrydamasio.dev@gmail.com"
 slice = slice(16, -4)
 

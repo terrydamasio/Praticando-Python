@@ -7,7 +7,14 @@
 # conta de 50 a 100
 #for i in range(50, 100): 
     #print(i)
+#print("Fim!")
+
 
 # conta os segundos de 10 a 1 
-for seconds in range(10, 0, -1):
-    print(seconds)
+inicio = int(input("Início: "))
+fim = int(input("Fim: "))
+passos = int(input("Passos: "))
+
+for i in range(inicio, fim+1, passos):
+    print(i)
+print("Fim!")
