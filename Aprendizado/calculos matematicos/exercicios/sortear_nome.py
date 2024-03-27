@@ -1,4 +1,3 @@
-import math
 import random
 
 nomes = ['Terry', 'Kerry', 'Maju', 'Ricardo', 'Rafael']

@@ -5,11 +5,9 @@
 
 #while len(name) == 0 or len(name) < 4:
 #    name = input("Digite o seu nome: ")
-
 #print("Seja bem vindo, " + name)
 
-# loop control
-
+# INTERROMPENDO REPETIÇÕES 
 # break = used to terminate the loop entirely 
 # continue = skips to the next interation 
 # pass = does nothing
