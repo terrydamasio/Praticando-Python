@@ -4,8 +4,9 @@
 
 carros = ("Golf", "Jetta", "Virtus", "Gol", "Jetta")
 
-#print(carros[2])
-#print(carros[0:2])
+#                     [início:fim:salto]
+print(f"Carro 2: {carros[2]}")
+print(f"Carros entre posição 0 e 2: {carros[0:2]}")
 
 # percorrendo uma tupla
 for carro in carros:
