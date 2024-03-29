@@ -6,7 +6,6 @@ x, y, z = frutas
 print(frutas[0])
 
 # lists functions
-
 frutas.append("Uva") # adcionar um elemento
 frutas.insert(0, "Uva") # adcionar um elemento
 frutas.sort() # colocar os valores em ordem
