@@ -1,14 +1,24 @@
-dados = list()
-pessoas = list()
+# criando lista pequena
+pessoa = list() 
 
-dados.append("Terry")
-dados.append(20)
-dados.append("Kerry")
-dados.append(19)
+# atribuindo valores
+pessoa.append(str(input("Nome: "))) 
+pessoa.append(int(input("Idade: ")))
 
-# criando uma cópia de dados[] dentro de pessoas[] 
-pessoas.append(dados[:])
+# criando lista grande
+dados = list() 
 
-# criando listas compostas
-pessoas = [["Terry", 20], ["Kerry", 19], ["Júlia", 18], ["Ricardo", 19]]
-print(pessoas)
+# criando cópia da lista pequena na grande
+dados.append(pessoa[:])
+
+# adicionando novos valores
+pessoa[0] = str(input("Nome da mãe: "))
+pessoa[1] = int(input("Idade: "))
+dados.append(pessoa[:])
+
+print("Cadastro de usuários")
+print("="*30)
+
+for nome, idade in dados:
+    print(f"Nome: {nome}\nIdade: {idade}")
+    print("-"*30)
