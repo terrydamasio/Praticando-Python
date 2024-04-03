@@ -12,4 +12,3 @@ def listaPares(lista):
     print(f"O número números pares são: {par}.")
 
 listaPares(lista_num)
-

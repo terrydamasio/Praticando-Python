@@ -12,8 +12,10 @@ print(f"Carros entre posição 0 e 2: {carros[0:2]}")
 for carro in carros:
     print(carro)
 
+# percorrer carros e mostrar posições 
 for cont in range(0, len(carros)):
     print(f"Esses são os carros que eu tenho: {carros[cont]} na posição {cont}")
 
+# percorrer a posição e os valores do carro
 for pos, carro in enumerate(carros):
     print(f"Esses são os carros que eu tenho: {carro} na posição {pos}")

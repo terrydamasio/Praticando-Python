@@ -1,5 +1,4 @@
 # dicionários são estruturas de dados semelhantes a listas, porém conseguimos usar índices literais
-
 dados = dict()
 dados = {
     'nome': 'Terry', 
