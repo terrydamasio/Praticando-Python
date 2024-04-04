@@ -17,5 +17,10 @@ def cont(i, f, p):
         c += p
 
 # argumentos opcionais
-# escopo de variáveis
-# retorno
+def sum(a, b, c = 0):
+    s = a + b + c
+    print(f"A soma vale {s}")
+#sum(8, 4)
+
+# escopo de variáveis => local onde a variável vai existir ou não
+# retorno => return 
