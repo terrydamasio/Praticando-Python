@@ -4,4 +4,8 @@ def writeMsg(msg):
     print(f"  {msg}")
     print('~'*leng)
 
-writeMsg("Olá, mundo!")
+def main():
+    writeMsg("Olá, mundo!")
+    
+if __name__ == '__main__':
+    main()
