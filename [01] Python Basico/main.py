@@ -65,23 +65,37 @@ def choise():
             print("LISTA DE CLIENTES")
             print("-"*20)
             
-            usuario_buscar = str(input("Usuario para buscar: ")).upper()
-            for c in cadastros:
-                if usuario_buscar in c['nome'].upper():
-                    print(c['nome'])
-            
-            # Voltar ao menu
-            opcao = str(input("Deseja inserir mais usuários? [S/N] ")).upper()
-            while opcao not in ("SN"):
-                print("Opção inválida! Tente novamente.")
+            while True:
+                usuario_buscar = str(input("Usuario para buscar: ")).upper()
+                for c in cadastros:
+                    if usuario_buscar in c['nome'].upper():
+                        print(c['nome'])
+                
+                # Voltar ao menu
                 opcao = str(input("Deseja inserir mais usuários? [S/N] ")).upper()
-            
+                while opcao not in ("SN"):
+                    print("Opção inválida! Tente novamente.")
+                    opcao = str(input("Deseja inserir mais usuários? [S/N] ")).upper()
+                
                 if opcao in "N":    
                     main()
                     break
         case 4: 
             # Atualizar clientes
-            print("Atualizar clientes")
+            print("-"*20)
+            print("LISTA DE CLIENTES")
+            print("-"*20)
+
+            atualizar_usuario = str(input("Usuario para atualizar: ")).upper()
+            for c in cadastros:
+                if atualizar_usuario in c['nome'].upper():
+                    usuario['nome'] = str(input("Novo nome: "))
+                    usuario['email'] = str(input("Novo e-mail: "))
+                    usuario['cpf'] = str(input("Novo CPF: "))
+                    usuario['telefone'] = str(input("Novo telefone: "))
+
+                    cadastros.insert(cadastros.index(c), usuario.copy())
+                    print(cadastros)
             
             # Voltar ao menu
             opcao = str(input("Digite 'M' para voltar menu: ")).upper()
@@ -93,16 +107,26 @@ def choise():
                 main()
         case 5: 
             # Excluir cliente
-            print("Excluir clientes")
-            
-            # Voltar ao menu
-            opcao = str(input("Digite 'M' para voltar menu: ")).upper()
-            while opcao not in ("M"):
+            print("-"*20)
+            print("EXCLUIR CLIENTE")
+            print("-"*20)
+
+            while True:
+                excluir_usuario = str(input("Usuario para excluir: ")).upper()
+                for c in cadastros:
+                    if excluir_usuario in c['nome'].upper():
+                        del cadastros[cadastros.index(c)]
+                        print(cadastros)
+                
+                # Voltar ao menu
+                opcao = str(input("Deseja excluir mais usuários? [S/N] ")).upper()
+                while opcao not in ("SN"):
                     print("Opção inválida! Tente novamente.")
-                    opcao = str(input("Digite 'M' para voltar menu: ")).upper()
-            
-            if opcao in "M":
-                main()
+                    opcao = str(input("Deseja excluir mais usuários? [S/N] ")).upper()
+                
+                if opcao in "N":    
+                    main()
+                    break
         case 6:
             print("Saindo...")
         case __:
