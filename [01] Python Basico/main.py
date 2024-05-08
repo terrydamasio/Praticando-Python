@@ -1,6 +1,6 @@
 import os
 
-# Fazer crud de cliente utilizando tuplas, lista, dicionario, funções, módulos e tratamento de erros.
+# Implementar módulos e tratamento de erros.
 
 usuario = dict()
 cadastros = list()
