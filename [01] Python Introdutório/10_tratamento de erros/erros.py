@@ -6,5 +6,5 @@ except Exception as error:
     print(f"Error: {error.__class__}")
 else: # se não
     print(f"O resultado é {a}")
-finally: # finalmente
+finally: # esse comando de bloco sempre é executado
     print("Volte sempre!")
