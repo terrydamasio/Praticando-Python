@@ -4,7 +4,7 @@
 import csv
     
 # escrever em arquivos csv
-with open('clientes.csv', 'w') as arquivo:
+with open('arquivos/clientes.csv', 'w') as arquivo:
     # cria objeto para escrever
     w = csv.writer(arquivo)
     
@@ -15,7 +15,7 @@ with open('clientes.csv', 'w') as arquivo:
     w.writerow(('Eduardo Americo', 'eduardoamerico@gmail.com', '81989189090'))
     
 # ler arquivos csv
-with open('clientes.csv', 'r', encoding='utf8', newline = '\r\n') as arquivo:
+with open('arquivos/clientes.csv', 'r', encoding='utf8', newline = '\r\n') as arquivo:
     # criar objeto para ler
     r = csv.reader(arquivo)
     
@@ -24,7 +24,7 @@ with open('clientes.csv', 'r', encoding='utf8', newline = '\r\n') as arquivo:
         print(x)
         
 # lista com dados do arquivo
-with open('clientes.csv', 'r') as arquivo:
+with open('arquivos/clientes.csv', 'r') as arquivo:
     r = csv.reader(arquivo)
     dados = list(r)
     

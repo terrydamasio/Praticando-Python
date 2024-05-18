@@ -1,12 +1,12 @@
 """
 # Abrindo dataset em uma única linha 
-f = open('salarios.csv', 'r')
+f = open('arquivos/salarios.csv', 'r')
 data = f.read()
 rows = data.split('\n')
 print(rows)
 
 # Abrindo dataset em colunas
-f = open('salarios.csv', 'r')
+f = open('arquivos/salarios.csv', 'r')
 data = f.read()
 rows = data.split('\n')
 
@@ -24,7 +24,7 @@ print(count)
 """
 
 # Contar colunas em um arquivo
-f = open('salarios.csv', 'r')
+f = open('arquivos/salarios.csv', 'r')
 data = f.read()
 rows = data.split('\n')
 
